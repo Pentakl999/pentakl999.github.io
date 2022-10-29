@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     color: #000;
+    z-index: 1;
     &__divider {
         width: 2px;
         height: 70px;
@@ -28,17 +29,22 @@
         color: #fff;
         width: 20px;
         transform: rotate(90deg);
-        transition: 0.5s all;
         &:hover {
-            text-shadow: 0 0 18px #fff;
+            svg {
+                transition: 0.5s all;
+                transform: scale(110%);
+                filter: drop-shadow(0 0 8px #fff);
+            }
         }
         img {
             width: 20px;
         }
     }
     .vk {
-        width: 21px;
         transform: rotate(0);
         color:#fff;
+        svg {
+            width: 20px;
+        }
     }
 }

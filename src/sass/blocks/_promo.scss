@@ -4,8 +4,8 @@
     background: url('../img/main_bg.png')no-repeat 50%/cover, rgba(0,0,0, .7);
     background-blend-mode: color;
     padding: 205px;
-
     color: rgb(219, 219, 219);
+    z-index: 0;
     &__title {
         width: 530px;
         margin-top: 10px;

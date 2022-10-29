@@ -5,6 +5,7 @@
     padding: 10px 25px;
     transition: 0.5s all;
     &:hover {
+        transform: scale(105%);
         box-shadow: 0 0 15px $main-color;
     }
     &_rgba0 {
@@ -13,6 +14,7 @@
         padding: 10px 15px;
         color: #fff;
         &:hover {
+            transform: scale(105%);
             background: $main-color;
             box-shadow: 0 0 15px $main-color;
         }
