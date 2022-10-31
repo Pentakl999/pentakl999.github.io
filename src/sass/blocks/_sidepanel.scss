@@ -27,8 +27,9 @@
     &__link {
         position: relative;
         color: #fff;
-        width: 20px;
-        transform: rotate(90deg);
+        svg {
+            width: 20px;
+        }
         &:hover {
             svg {
                 transition: 0.5s all;
@@ -37,13 +38,6 @@
             }
         }
         img {
-            width: 20px;
-        }
-    }
-    .vk {
-        transform: rotate(0);
-        color:#fff;
-        svg {
             width: 20px;
         }
     }
