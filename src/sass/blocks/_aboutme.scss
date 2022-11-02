@@ -1,0 +1,63 @@
+.aboutme {
+    min-height: 600px;
+    padding-top: 120px;
+    &__grid {
+        display: grid;
+        grid-template-columns: 470px, 670px;
+        grid-template-rows: minnax(245px, auto), minnax(245px, auto);
+        grid-auto-rows: minmap(245px, auto);
+        gap: 40px 70px;
+        grid-template-areas: 
+        "me name"
+        "me professions";
+    }
+    &__me {
+        grid-area: me;
+        width: 400px;
+    }
+    &__name {
+        grid-area: name;
+        &_title {
+            @include before_circle;
+        }
+        &_text {
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+    }
+    &__professions {
+        grid-area: professions;
+        display: grid;
+        grid-template-columns: repeat(2, 260px);
+        grid-template-rows: repeat(2, 116px);
+        row-gap: 20px;
+        column-gap: 50px;
+        &_item {
+            position: relative;
+            padding-left: 60px;
+            @include before_circle;
+            margin-left: 0;
+            &:before {
+                top: 0;
+                left: 0;
+                transform: translateX(0);
+            }
+            &_img{
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                margin-left: 0;
+            }
+            &_text {
+                margin-top: 6px;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #000000;
+            }
+        }
+    }
+}

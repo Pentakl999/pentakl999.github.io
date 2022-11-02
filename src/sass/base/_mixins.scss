@@ -1,6 +1,6 @@
 @mixin before_circle {
     margin-left: 10px;
-    z-index: 2;
+    z-index: 5;
     position: relative;
     &:before {
         content: '';

@@ -10,6 +10,7 @@ const htmlmin = require('gulp-htmlmin');
 gulp.task('server', function() {
 
     browserSync({
+        host: "192.168.0.109",
         server: {
             baseDir: "dist"
         }
