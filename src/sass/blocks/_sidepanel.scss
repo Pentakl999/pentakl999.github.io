@@ -9,6 +9,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    mix-blend-mode: difference;
     &__divider {
         width: 2px;
         height: 70px;
