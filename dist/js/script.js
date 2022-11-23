@@ -21,19 +21,27 @@ overlay.addEventListener('click', () => {
 
 
 // // sidepanel color 
-// const promoscreen = document.querySelector('.promo');
-// $(window).scroll(function(){
-//     if($(window).scrollTop() > (promoscreen.clientHeight * .68)){
-//         $(".sidepanel__divider").css("background-color","black"),
-//         $(".sidepanel__text").css("color","black"),
-//         $("svg").css("fill","black");
-//     }else if($(window).scrollTop() > (promoscreen.clientHeight * .18)){
-//         $(".sidepanel__divider").css("background-color","#808080"),
-//         $(".sidepanel__text").css("color","#808080"),
-//         $("svg").css("fill","#808080");
-//     }else{
-//         $(".sidepanel__divider").css("background-color","white"),
-//         $(".sidepanel__text").css("color","white"),
-//         $("svg").css("fill","white");
-//     };
-// });
+const promoscreen = document.querySelector('.promo');
+$(window).scroll(function(){
+    if($(window).scrollTop() > (promoscreen.clientHeight * .68)){
+        $(".sidepanel__divider").css("background-color","black"),
+        $(".sidepanel__text").css("color","black"),
+        $("svg").css("fill","black");
+    }else if($(window).scrollTop() > (promoscreen.clientHeight * .18)){
+        $(".sidepanel__divider").css("background-color","#808080"),
+        $(".sidepanel__text").css("color","#808080"),
+        $("svg").css("fill","#808080");
+    }else{
+        $(".sidepanel__divider").css("background-color","white"),
+        $(".sidepanel__text").css("color","white"),
+        $("svg").css("fill","white");
+    };
+});
+
+//skills percent
+const counters = document.querySelectorAll('.item_percent'),
+    lines = document.querySelectorAll('.item_progress');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});

@@ -1,0 +1,99 @@
+.skills {
+    padding-top: 120px 0 120px 0;
+    min-height: 1140px;
+    text-align: center;
+    .title_fz16 {
+        @include before_circle;
+        margin-left: 0;
+        &:before {
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    &__wrapper {
+        margin-top: 60px;
+        justify-content: center;
+        display: grid;
+        grid-template: repeat(2, 270px) / repeat(4, 270px) ;
+        gap: 13px;
+    }
+    &__skill_item {
+        position: relative;
+        border: 2px solid #222;
+        padding: 30px 30px 25px 30px;
+        .item_icon {
+            position: absolute;
+            left: 30px;
+            top: 30px;
+        }
+        .item_title {
+            margin-top: 85px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+        .item_descr {
+            text-align: left;
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+    &__creating {
+        display: grid;
+        margin-top: 120px;
+        grid-template: repeat(2, 70px) / repeat(3, 350px);
+        gap: 30px 45px;
+        .creating_item {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 0 41px 8px;
+            z-index: 0;
+            .item_title {
+                @include before_circle;
+                display: inline;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 21px;
+                color: #000000;
+                margin-left: 0;
+                &::before {
+                    top: 60%;
+                }
+            }
+            .item_percent {
+                display: inline;
+                text-align: right;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                color: #000000;
+            }
+            .item_percent_below {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 14px;
+                width: 100%;
+                background: #E8E4DE;
+                border-radius: 4px;
+                z-index: 1;
+            }
+            .item_progress {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 14px;
+                background-color: $main-color;
+                border-radius: 4px;
+                z-index: 2;
+            }
+        }
+    }
+}
