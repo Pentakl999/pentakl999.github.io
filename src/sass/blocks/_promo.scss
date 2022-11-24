@@ -6,6 +6,15 @@
     padding: 205px;
     color: rgb(219, 219, 219);
     z-index: 0;
+    .title {
+        text-align: left;
+        &__section-subtitle {
+            margin-left: 13px;
+            &::before {
+                left: 6px;
+            }
+        }
+    }
     &__btns {
         color: #fff;
         margin-top: 25px;
