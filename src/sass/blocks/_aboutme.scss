@@ -1,6 +1,15 @@
 .aboutme {
     min-height: 600px;
     padding-top: 120px;
+    .title {
+        text-align: left;
+        &__section-subtitle {
+            margin-left: 13px;
+            &::before {
+                left: 6px;
+            }
+        }
+    }
     &__grid {
         display: grid;
         grid-template-columns: 470px, 670px;
@@ -10,6 +19,9 @@
         grid-template-areas: 
         "me name"
         "me professions";
+    }
+    .divider {
+        margin-left: 0;
     }
     &__me {
         grid-area: me;

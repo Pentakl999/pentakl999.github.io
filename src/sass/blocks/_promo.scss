@@ -6,14 +6,6 @@
     padding: 205px;
     color: rgb(219, 219, 219);
     z-index: 0;
-    &__title {
-        width: 530px;
-        margin-top: 10px;
-    }
-    &__subtitle {
-        @include before_circle;
-        position: relative;
-    }
     &__btns {
         color: #fff;
         margin-top: 25px;
