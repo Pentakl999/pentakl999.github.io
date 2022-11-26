@@ -1,0 +1,17 @@
+.social__link {
+        position: relative;
+        svg {
+            transition: .2s all;
+            fill: #fff;
+        }
+        img {
+            width: 20px;
+        }
+    &:hover {
+        svg {
+            transition: 0.5s all;
+            transform: scale(110%);
+            filter: drop-shadow(0 0 8px #a0a0a0);
+        }
+    }
+}

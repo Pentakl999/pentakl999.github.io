@@ -1,11 +1,9 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url('../img/main_bg.png')no-repeat 50%/cover, rgba(0,0,0, .7);
-    background-blend-mode: color;
+    background: url('../img/main_bg.png') 85% 10%/45% no-repeat , #333;
     padding: 205px;
     color: rgb(219, 219, 219);
-    z-index: 0;
     .title {
         text-align: left;
         &__section-subtitle {

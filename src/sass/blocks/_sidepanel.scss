@@ -25,22 +25,5 @@
             display: block;transform: rotate(-90deg) translate(-36%, -267%);
         }
     }
-    &__link {
-        position: relative;
-        svg {
-            transition: .2s all;
-            width: 20px;
-            fill: #fff;
-        }
-        &:hover {
-            svg {
-                transition: 0.5s all;
-                transform: scale(110%);
-                filter: drop-shadow(0 0 8px #a0a0a0);
-            }
-        }
-        img {
-            width: 20px;
-        }
-    }
+    
 }
