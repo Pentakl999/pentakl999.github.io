@@ -8,10 +8,10 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.add('active');
 });
 
-close.addEventListener('click', () => {
-    menu.classList.remove('active');
-    hamburger.classList.remove('active');
-});
+// close.addEventListener('click', () => {
+//     menu.classList.remove('active');
+//     hamburger.classList.remove('active');
+// });
 
 overlay.addEventListener('click', () => {
     menu.classList.remove('active');

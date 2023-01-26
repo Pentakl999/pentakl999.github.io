@@ -1,6 +1,6 @@
 .hamburger {
     position: absolute;
-    z-index: 12;
+    z-index: 9;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -57,14 +57,15 @@
         .menu__overlay {
             opacity: .6;
             visibility: visible;
+            cursor: pointer;
         }
     }
-    &__close {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        cursor: pointer;
-    }
+    // &__close {
+    //     position: absolute;
+    //     top: 25px;
+    //     right: 25px;
+    //     cursor: pointer;
+    // }
     &__block {
         left: -100%;
 

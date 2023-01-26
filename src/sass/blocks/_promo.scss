@@ -2,9 +2,10 @@
     min-height: 100vh;
     position: relative;
     background: url('../img/main_bg.png') 85% 10%/45% no-repeat , #333;
-    padding: 205px;
+    padding-top: 205px;
     color: rgb(219, 219, 219);
     .title {
+        text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
         text-align: left;
         &__section-subtitle {
             margin-left: 13px;
