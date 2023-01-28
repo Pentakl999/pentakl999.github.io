@@ -3,7 +3,7 @@
     padding-top: 120px;
     min-height: 1140px;
     text-align: center;
-    &__wrapper {
+    &__grid {
         margin-top: 60px;
         justify-content: center;
         display: grid;
@@ -39,6 +39,7 @@
     &__creating {
         display: grid;
         margin-top: 120px;
+        justify-content: center;
         grid-template: repeat(2, 70px) / repeat(3, 350px);
         gap: 30px 45px;
         .creating_item {
